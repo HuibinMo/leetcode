@@ -56,7 +56,7 @@ class Solution:
 
 ## 42. 接雨水
 ```python
-42# 方法一：前后缀分解
+# 方法一：前后缀分解
 # 时间复杂度O(n), 空间复杂度O(n)
 class Solution:
     def trap(self, height: List[int]) -> int:
