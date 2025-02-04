@@ -1,6 +1,6 @@
 # 灵茶山艾府的基础算法精讲笔记和leetcode答案
 
-# 15. 三数之和
+## 15. 三数之和
 ```python
 # 时间复杂度为O(n^2), 空间复杂度O(1)
 class Solution:
@@ -35,7 +35,7 @@ class Solution:
         return ans
 ```
 
-# 11. 盛最多水的容器
+## 11. 盛最多水的容器
 ```python
 # 时间复杂度O(n), 空间复杂度O(1)
 class Solution:
