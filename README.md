@@ -34,3 +34,22 @@ class Solution:
                         k -= 1
         return ans
 ```
+
+# 11. 盛最多水的容器
+```python
+# 时间复杂度O(n), 空间复杂度O(1)
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        ans = left = 0  # 初始化左柱在最左侧
+        right = len(height) - 1  # 初始化右柱在最右侧
+        while left < right:
+            area = (right - left) * min(height[left], height[right])
+            ans = max(ans, area)
+            if height[left] < height[right]: # 左柱比右柱短
+                # height[left] 与右边的任意线段都无法组成一个比 ans 更大的面积
+                left += 1
+            else:
+                # height[right] 与左边的任意线段都无法组成一个比 ans 更大的面积
+                right -= 1
+        return ans
+```
